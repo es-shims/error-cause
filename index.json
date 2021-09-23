@@ -1,0 +1,10 @@
+[
+	"Error",
+	"AggregateError",
+	"EvalError",
+	"RangeError",
+	"ReferenceError",
+	"SyntaxError",
+	"TypeError",
+	"URIError"
+]

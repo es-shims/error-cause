@@ -2,13 +2,17 @@
 	"name": "error-cause",
 	"version": "0.0.0",
 	"description": "An ES-spec-compliant shim/polyfill/replacement for the `.cause` property on all Error types that works as far down as ES3",
-	"main": "index.js",
+	"main": "index.json",
 	"exports": {
-		".": "./index.js",
+		".": "./index.json",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "eslint --ext=js,mjs .",
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"pretest": "npm run lint",
+		"test": "npm run tests-only",
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -33,5 +37,25 @@
 	"bugs": {
 		"url": "https://github.com/es-shims/error-cause/issues"
 	},
-	"homepage": "https://github.com/es-shims/error-cause#readme"
+	"homepage": "https://github.com/es-shims/error-cause#readme",
+	"dependencies": {
+		"call-bind": "^1.0.2",
+		"define-properties": "^1.1.3",
+		"es-abstract": "^1.18.6",
+		"es-aggregate-error": "^1.0.5",
+		"get-intrinsic": "^1.1.1",
+		"globalthis": "^1.0.2"
+	},
+	"devDependencies": {
+		"@ljharb/eslint-config": "^18.0.0",
+		"aud": "^1.1.5",
+		"eslint": "^7.32.0",
+		"function.prototype.name": "^1.1.4",
+		"has-strict-mode": "^1.0.1",
+		"nyc": "^10.3.2",
+		"tape": "^5.3.1"
+	},
+	"engines": {
+		"node": ">= 0.4"
+	}
 }

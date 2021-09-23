@@ -1,0 +1,38 @@
+{
+	"root": true,
+
+	"extends": "@ljharb",
+
+	"globals": {
+		"AggregateError": false,
+	},
+
+	"rules": {
+		"func-name-matching": "off",
+		"func-style": "off",
+		"id-length": "off",
+		"max-lines-per-function": "off",
+		"multiline-comment-style": "off",
+		"new-cap": ["error", {
+			"capIsNewExceptions": [
+				"CreateNonEnumerableDataPropertyOrThrow",
+				"DefinePropertyOrThrow",
+				"Get",
+				"GetIntrinsic",
+				"HasProperty",
+				"InstallErrorCause",
+				"Error",
+				"AggregateError",
+				"EvalError",
+				"RangeError",
+				"ReferenceError",
+				"SyntaxError",
+				"ToString",
+				"TypeError",
+				"Type",
+				"URIError"
+			],
+		}],
+		"operator-linebreak": ["error", "before"],
+	},
+}
