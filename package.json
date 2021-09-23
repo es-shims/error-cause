@@ -1,6 +1,6 @@
 {
 	"name": "error-cause",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "An ES-spec-compliant shim/polyfill/replacement for the `.cause` property on all Error types that works as far down as ES3",
 	"main": "index.json",
 	"exports": {
