@@ -26,10 +26,13 @@ const assert = require('assert');
 
 require('error-cause/auto');
 
-const e = new Error('message!', { cause: 'bugs' });
-
-assert(e instanceof Error);
-assert(e.cause === 'bugs');
+try {
+		x();
+} catch (e) {
+		const actual = new Error('a better message!', { cause: e });
+		assert(actual instanceof Error);
+		assert(actual.cause === e);
+}
 ```
 
 ## Tests
