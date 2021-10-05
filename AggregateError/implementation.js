@@ -4,7 +4,7 @@ var $AggregateError = require('es-aggregate-error/polyfill')();
 
 var setProto = require('es-abstract/helpers/setProto');
 
-var ToString = require('es-abstract/2020/ToString');
+var ToString = require('es-abstract/2021/ToString');
 
 var InstallErrorCause = require('../InstallErrorCause');
 
