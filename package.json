@@ -59,7 +59,7 @@
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
 		"eslint": "^7.32.0",
-		"function.prototype.name": "^1.1.4",
+		"function.prototype.name": "^1.1.5",
 		"has-strict-mode": "^1.0.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^1.1.4",
