@@ -12,6 +12,7 @@
 		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"prelint": "evalmd README.md",
 		"lint": "eslint --ext=js,mjs .",
+		"postlint": "es-shim-api --multi --bound",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
@@ -53,6 +54,7 @@
 		"globalthis": "^1.0.2"
 	},
 	"devDependencies": {
+		"@es-shims/api": "^2.2.3",
 		"@ljharb/eslint-config": "^18.0.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
