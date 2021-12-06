@@ -3,10 +3,6 @@
 
 	"extends": "@ljharb",
 
-	"globals": {
-		"AggregateError": false,
-	},
-
 	"rules": {
 		"func-name-matching": "off",
 		"func-style": "off",
@@ -33,6 +29,5 @@
 				"URIError"
 			],
 		}],
-		"operator-linebreak": ["error", "before"],
 	},
 }
