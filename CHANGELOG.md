@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/error-cause/compare/v1.0.1...v1.0.2) - 2021-12-05
+
+### Commits
+
+- [actions] reuse common workflows [`a2a7c51`](https://github.com/es-shims/error-cause/commit/a2a7c511de2d38328798301199f1ec993665feb1)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`b28b1b2`](https://github.com/es-shims/error-cause/commit/b28b1b2960f15e234bbfaabfffeaa509b0ff47b7)
+- [actions] update codecov uploader [`77dd54f`](https://github.com/es-shims/error-cause/commit/77dd54f71f220fd65bcc8f7708de3e96248451d6)
+- [Deps] move `evalmd` to dev dependency [`7079c9d`](https://github.com/es-shims/error-cause/commit/7079c9d4556f307dc707dfa08118bfc8f96484ed)
+
 ## [v1.0.1](https://github.com/es-shims/error-cause/compare/v1.0.0...v1.0.1) - 2021-10-04
 
 ### Fixed
