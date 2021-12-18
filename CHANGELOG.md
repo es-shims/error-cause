@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/es-shims/error-cause/compare/v1.0.2...v1.0.3) - 2021-12-17
+
+### Commits
+
+- [Fix] `constructor` property must be non-enumerable [`a1de915`](https://github.com/es-shims/error-cause/commit/a1de9150adf8efbda01468122297fc6098d88a04)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config` [`0bb890a`](https://github.com/es-shims/error-cause/commit/0bb890a363e27ad165da77901689c74d44521908)
+
 ## [v1.0.2](https://github.com/es-shims/error-cause/compare/v1.0.1...v1.0.2) - 2021-12-05
 
 ### Commits
