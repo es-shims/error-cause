@@ -4,6 +4,7 @@ var $AggregateError = require('es-aggregate-error/polyfill')();
 
 var setProto = require('es-abstract/helpers/setProto');
 
+var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
 var ToString = require('es-abstract/2021/ToString');
 
 var InstallErrorCause = require('../InstallErrorCause');
@@ -29,7 +30,7 @@ function AggregateError(errors, message) {
 
 	InstallErrorCause(O, options);
 
-	O.constructor = AggregateError;
+	CreateMethodProperty(O, 'constructor', AggregateError);
 
 	return O;
 }

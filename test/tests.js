@@ -10,6 +10,7 @@ module.exports = function (Constructor, name, t) {
 
 	t.ok(instance instanceof Constructor, name + ' instance is `instanceof ' + name + '`');
 
+	t.notOk(Object.prototype.propertyIsEnumerable.call(instance, 'constructor'), 'instance has non-enumerable `constructor` property');
 	t.ok(Object.prototype.hasOwnProperty.call(instance, 'cause'), 'instance has own `cause` property');
 	t.equal(instance.cause, options.cause, name + ' instance has `cause` property matching passed-in cause');
 

@@ -11,6 +11,7 @@
 		"multiline-comment-style": "off",
 		"new-cap": ["error", {
 			"capIsNewExceptions": [
+				"CreateMethodProperty",
 				"CreateNonEnumerableDataPropertyOrThrow",
 				"DefinePropertyOrThrow",
 				"Get",

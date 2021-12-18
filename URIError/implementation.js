@@ -4,6 +4,7 @@ var GetIntrinsic = require('get-intrinsic');
 
 var $URIError = GetIntrinsic('%URIError%');
 
+var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
 var setProto = require('es-abstract/helpers/setProto');
 
 var InstallErrorCause = require('../InstallErrorCause');
@@ -15,7 +16,7 @@ function URIError(message) {
 
 	InstallErrorCause(O, arguments.length > 1 && arguments[1]);
 
-	O.constructor = URIError;
+	CreateMethodProperty(O, 'constructor', URIError);
 
 	return O;
 }

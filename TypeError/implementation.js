@@ -4,6 +4,7 @@ var GetIntrinsic = require('get-intrinsic');
 
 var $TypeError = GetIntrinsic('%TypeError%');
 
+var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
 var setProto = require('es-abstract/helpers/setProto');
 
 var InstallErrorCause = require('../InstallErrorCause');
@@ -15,7 +16,7 @@ function TypeError(message) {
 
 	InstallErrorCause(O, arguments.length > 1 && arguments[1]);
 
-	O.constructor = TypeError;
+	CreateMethodProperty(O, 'constructor', TypeError);
 
 	return O;
 }

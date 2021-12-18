@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
 var setProto = require('es-abstract/helpers/setProto');
 
 var $Error = GetIntrinsic('%Error%');
@@ -12,7 +13,7 @@ function Error(message) {
 
 	InstallErrorCause(O, arguments.length > 1 && arguments[1]);
 
-	O.constructor = Error;
+	CreateMethodProperty(O, 'constructor', Error);
 
 	return O;
 }
