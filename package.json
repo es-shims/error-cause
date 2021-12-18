@@ -96,10 +96,10 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
-		"@ljharb/eslint-config": "^19.1.0",
+		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
-		"eslint": "^8.4.0",
+		"eslint": "^8.5.0",
 		"evalmd": "^0.0.19",
 		"function.prototype.name": "^1.1.5",
 		"has-strict-mode": "^1.0.1",

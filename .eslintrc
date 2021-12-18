@@ -27,7 +27,7 @@
 				"ToString",
 				"TypeError",
 				"Type",
-				"URIError"
+				"URIError",
 			],
 		}],
 	},
