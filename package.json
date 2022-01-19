@@ -96,16 +96,16 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
-		"@ljharb/eslint-config": "^20.1.0",
-		"aud": "^1.1.5",
+		"@ljharb/eslint-config": "^20.2.0",
+		"aud": "^2.0.0",
 		"auto-changelog": "^2.3.0",
-		"eslint": "^8.5.0",
+		"eslint": "^8.7.0",
 		"evalmd": "^0.0.19",
 		"function.prototype.name": "^1.1.5",
 		"has-strict-mode": "^1.0.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.3.2"
+		"tape": "^5.4.1"
 	},
 	"engines": {
 		"node": ">= 0.4"
