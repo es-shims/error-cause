@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.4](https://github.com/es-shims/error-cause/compare/v1.0.3...v1.0.4) - 2022-05-04
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`4172ae5`](https://github.com/es-shims/error-cause/commit/4172ae5400db22cb14d227a317073f4c052dd6a6)
+- [Fix] ensure constructor prototypes are nonwritable [`735bfa3`](https://github.com/es-shims/error-cause/commit/735bfa3a493bc14783755f742c5501eff7b8b5e4)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog`, `tape` [`1d472b6`](https://github.com/es-shims/error-cause/commit/1d472b657ac83621d57860ed699ed9ebec68fcea)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `tape` [`8042125`](https://github.com/es-shims/error-cause/commit/8042125497714ec5087e0ec35ada2bb810320ede)
+- [patch] add comment for v8 bug [`6924f48`](https://github.com/es-shims/error-cause/commit/6924f485637d9d535e19e7bf36f9e3d9e189d5af)
+- [Deps] update `define-properties`, `es-abstract` [`69fc186`](https://github.com/es-shims/error-cause/commit/69fc1861856fe2d02336d64e882f8b0e4c259296)
+
 ## [v1.0.3](https://github.com/es-shims/error-cause/compare/v1.0.2...v1.0.3) - 2021-12-17
 
 ### Commits
