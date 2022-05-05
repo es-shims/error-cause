@@ -1,5 +1,6 @@
 'use strict';
 
+var hasPropertyDescriptors = require('has-property-descriptors')();
 var $AggregateError = require('es-aggregate-error/polyfill')();
 
 var setProto = require('es-abstract/helpers/setProto');
@@ -40,5 +41,8 @@ if (setProto) {
 }
 
 AggregateError.prototype = $AggregateError.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(AggregateError, 'prototype', { writable: false });
+}
 
 module.exports = AggregateError;

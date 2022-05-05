@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $URIError = GetIntrinsic('%URIError%');
 
@@ -26,5 +27,8 @@ if (setProto) {
 }
 
 URIError.prototype = $URIError.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(URIError, 'prototype', { writable: false });
+}
 
 module.exports = URIError;

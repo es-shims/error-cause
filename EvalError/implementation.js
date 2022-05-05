@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $EvalError = GetIntrinsic('%EvalError%');
 
@@ -26,5 +27,8 @@ if (setProto) {
 }
 
 EvalError.prototype = $EvalError.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(EvalError, 'prototype', { writable: false });
+}
 
 module.exports = EvalError;

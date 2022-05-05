@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $RangeError = GetIntrinsic('%RangeError%');
 
@@ -26,5 +27,8 @@ if (setProto) {
 }
 
 RangeError.prototype = $RangeError.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(RangeError, 'prototype', { writable: false });
+}
 
 module.exports = RangeError;

@@ -1,8 +1,22 @@
 'use strict';
 
+var hasPropertyDescriptors = require('has-property-descriptors')();
+
 module.exports = function (Constructor, name, t) {
 	t.equal(typeof Constructor, 'function', 'constructor is a function');
 	t.notOk('cause' in Constructor.prototype, '`cause` is not a property on `' + name + '.prototype`');
+
+	if (hasPropertyDescriptors) {
+		t.deepEqual(
+			Object.getOwnPropertyDescriptor(Constructor, 'prototype'),
+			{
+				configurable: false,
+				enumerable: false,
+				value: Constructor.prototype,
+				writable: false
+			}
+		);
+	}
 
 	var options = { cause: {} };
 	var errors = [{}];

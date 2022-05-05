@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
 var setProto = require('es-abstract/helpers/setProto');
 
@@ -23,5 +24,8 @@ if (setProto) {
 }
 
 Error.prototype = $Error.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(Error, 'prototype', { writable: false });
+}
 
 module.exports = Error;

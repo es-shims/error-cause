@@ -1,6 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $SyntaxError = GetIntrinsic('%SyntaxError%');
 
@@ -26,5 +27,8 @@ if (setProto) {
 }
 
 SyntaxError.prototype = $SyntaxError.prototype;
+if (hasPropertyDescriptors) {
+	Object.defineProperty(SyntaxError, 'prototype', { writable: false });
+}
 
 module.exports = SyntaxError;

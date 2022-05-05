@@ -92,7 +92,8 @@
 		"es-abstract": "^1.19.1",
 		"es-aggregate-error": "^1.0.7",
 		"get-intrinsic": "^1.1.1",
-		"globalthis": "^1.0.2"
+		"globalthis": "^1.0.2",
+		"has-property-descriptors": "^1.0.0"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
