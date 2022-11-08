@@ -2,12 +2,11 @@
 
 var GetIntrinsic = require('get-intrinsic');
 var hasPropertyDescriptors = require('has-property-descriptors')();
-var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
+var CreateMethodProperty = require('es-abstract/2022/CreateMethodProperty');
+var InstallErrorCause = require('es-abstract/2022/InstallErrorCause');
 var setProto = require('es-abstract/helpers/setProto');
 
 var $Error = GetIntrinsic('%Error%');
-
-var InstallErrorCause = require('../InstallErrorCause');
 
 function Error(message) {
 	var O = arguments.length > 1 ? new $Error(message, arguments[1]) : new $Error(message);

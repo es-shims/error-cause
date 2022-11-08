@@ -5,10 +5,9 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $SyntaxError = GetIntrinsic('%SyntaxError%');
 
-var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
+var CreateMethodProperty = require('es-abstract/2022/CreateMethodProperty');
+var InstallErrorCause = require('es-abstract/2022/InstallErrorCause');
 var setProto = require('es-abstract/helpers/setProto');
-
-var InstallErrorCause = require('../InstallErrorCause');
 
 var Error = require('../Error/polyfill')();
 
