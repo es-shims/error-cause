@@ -12,7 +12,6 @@
 		"new-cap": ["error", {
 			"capIsNewExceptions": [
 				"CreateMethodProperty",
-				"CreateNonEnumerableDataPropertyOrThrow",
 				"DefinePropertyOrThrow",
 				"Get",
 				"GetIntrinsic",

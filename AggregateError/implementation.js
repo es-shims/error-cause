@@ -5,9 +5,9 @@ var $AggregateError = require('es-aggregate-error/polyfill')();
 
 var setProto = require('es-abstract/helpers/setProto');
 
-var CreateMethodProperty = require('es-abstract/2022/CreateMethodProperty');
-var InstallErrorCause = require('es-abstract/2022/InstallErrorCause');
-var ToString = require('es-abstract/2022/ToString');
+var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
+var InstallErrorCause = require('es-abstract/2023/InstallErrorCause');
+var ToString = require('es-abstract/2023/ToString');
 
 var Error = require('../Error/polyfill')();
 
