@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.6](https://github.com/es-shims/error-cause/compare/v1.0.5...v1.0.6) - 2023-08-27
+
+### Commits
+
+- [Deps] update `define-properties`, `es-abstract`, `es-aggregate-error`, `get-intrinsic` [`838666c`](https://github.com/es-shims/error-cause/commit/838666cdf77f06762e62225e461211610c4b6e73)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`a2ae385`](https://github.com/es-shims/error-cause/commit/a2ae385d9b581467abc494d1d06afc730eed4e34)
+
 ## [v1.0.5](https://github.com/es-shims/error-cause/compare/v1.0.4...v1.0.5) - 2022-11-07
 
 ### Commits
