@@ -88,13 +88,13 @@
 	},
 	"homepage": "https://github.com/es-shims/error-cause#readme",
 	"dependencies": {
-		"call-bind": "^1.0.2",
-		"define-properties": "^1.2.0",
-		"es-abstract": "^1.22.1",
-		"es-aggregate-error": "^1.0.10",
-		"get-intrinsic": "^1.2.1",
+		"call-bind": "^1.0.5",
+		"define-properties": "^1.2.1",
+		"es-abstract": "^1.22.3",
+		"es-aggregate-error": "^1.0.12",
+		"get-intrinsic": "^1.2.3",
 		"globalthis": "^1.0.3",
-		"has-property-descriptors": "^1.0.0"
+		"has-property-descriptors": "^1.0.1"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.4.2",
