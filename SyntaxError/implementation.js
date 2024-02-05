@@ -1,9 +1,8 @@
 'use strict';
 
-var GetIntrinsic = require('get-intrinsic');
 var hasPropertyDescriptors = require('has-property-descriptors')();
 
-var $SyntaxError = GetIntrinsic('%SyntaxError%');
+var $SyntaxError = require('es-errors/syntax');
 
 var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
 var InstallErrorCause = require('es-abstract/2023/InstallErrorCause');
