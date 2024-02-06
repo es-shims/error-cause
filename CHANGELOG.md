@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.7](https://github.com/es-shims/error-cause/compare/v1.0.6...v1.0.7) - 2024-02-05
+
+### Commits
+
+- [Refactor] use `es-errors` where possible, so things that only need those do not need `get-intrinsic` [`594cdae`](https://github.com/es-shims/error-cause/commit/594cdaef3d6509c4044bf60fb6309cc9585ca3d7)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `es-aggregate-error`, `get-intrinsic`, `has-property-descriptors` [`2353b34`](https://github.com/es-shims/error-cause/commit/2353b346dd8373b28c579bb5b4d78e8a7d903bae)
+- [Dev Deps] update `aud`, `function.prototype.name`, `npmignore`, `tape` [`d9d2cb7`](https://github.com/es-shims/error-cause/commit/d9d2cb7c8d01109c36531a9a089adf83be15ce3c)
+
 ## [v1.0.6](https://github.com/es-shims/error-cause/compare/v1.0.5...v1.0.6) - 2023-08-27
 
 ### Commits
