@@ -4,8 +4,8 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $URIError = require('es-errors/uri');
 
-var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
-var InstallErrorCause = require('es-abstract/2023/InstallErrorCause');
+var DefineMethodProperty = require('es-abstract/2024/DefineMethodProperty');
+var InstallErrorCause = require('es-abstract/2024/InstallErrorCause');
 var setProto = require('es-abstract/helpers/setProto');
 
 var Error = require('../Error/polyfill')();
@@ -15,7 +15,7 @@ function URIError(message) {
 
 	InstallErrorCause(O, arguments.length > 1 && arguments[1]);
 
-	CreateMethodProperty(O, 'constructor', URIError);
+	DefineMethodProperty(O, 'constructor', URIError, false);
 
 	return O;
 }

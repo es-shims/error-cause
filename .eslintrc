@@ -11,7 +11,7 @@
 		"multiline-comment-style": "off",
 		"new-cap": ["error", {
 			"capIsNewExceptions": [
-				"CreateMethodProperty",
+				"DefineMethodProperty",
 				"DefinePropertyOrThrow",
 				"Get",
 				"GetIntrinsic",
