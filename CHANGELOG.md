@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8](https://github.com/es-shims/error-cause/compare/v1.0.7...v1.0.8) - 2024-03-16
+
+### Commits
+
+- [Deps] update `call-bind`, `es-abstract`, `has-property-descriptors` [`f32d2c2`](https://github.com/es-shims/error-cause/commit/f32d2c2c922ea48ca56cf8c19768143c8670c1f2)
+- [Dev Deps] update `tape` [`8306def`](https://github.com/es-shims/error-cause/commit/8306defb4dfed92c18e4275fda4983636ee507bb)
+
 ## [v1.0.7](https://github.com/es-shims/error-cause/compare/v1.0.6...v1.0.7) - 2024-02-05
 
 ### Commits
