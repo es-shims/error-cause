@@ -2,7 +2,7 @@
 
 var define = require('define-properties');
 var globalThis = require('globalthis')();
-var setProto = require('es-abstract/helpers/setProto');
+var setProto = require('set-proto');
 
 var trueThunk = function () {
 	return true;

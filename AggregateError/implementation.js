@@ -3,7 +3,7 @@
 var hasPropertyDescriptors = require('has-property-descriptors')();
 var $AggregateError = require('es-aggregate-error/polyfill')();
 
-var setProto = require('es-abstract/helpers/setProto');
+var setProto = require('set-proto');
 
 var DefineMethodProperty = require('es-abstract/2024/DefineMethodProperty');
 var InstallErrorCause = require('es-abstract/2024/InstallErrorCause');

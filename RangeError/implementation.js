@@ -6,7 +6,7 @@ var $RangeError = require('es-errors/range');
 
 var DefineMethodProperty = require('es-abstract/2024/DefineMethodProperty');
 var InstallErrorCause = require('es-abstract/2024/InstallErrorCause');
-var setProto = require('es-abstract/helpers/setProto');
+var setProto = require('set-proto');
 
 var Error = require('../Error/polyfill')();
 
