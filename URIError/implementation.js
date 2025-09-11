@@ -4,8 +4,8 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $URIError = require('es-errors/uri');
 
-var DefineMethodProperty = require('es-abstract/2024/DefineMethodProperty');
-var InstallErrorCause = require('es-abstract/2024/InstallErrorCause');
+var DefineMethodProperty = require('es-abstract/2025/DefineMethodProperty');
+var InstallErrorCause = require('es-abstract/2025/InstallErrorCause');
 var setProto = require('set-proto');
 
 var Error = require('../Error/polyfill')();

@@ -1,8 +1,8 @@
 'use strict';
 
 var hasPropertyDescriptors = require('has-property-descriptors')();
-var DefineMethodProperty = require('es-abstract/2024/DefineMethodProperty');
-var InstallErrorCause = require('es-abstract/2024/InstallErrorCause');
+var DefineMethodProperty = require('es-abstract/2025/DefineMethodProperty');
+var InstallErrorCause = require('es-abstract/2025/InstallErrorCause');
 var setProto = require('set-proto');
 
 var $Error = require('es-errors');
