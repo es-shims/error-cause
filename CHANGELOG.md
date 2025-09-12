@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.9](https://github.com/es-shims/error-cause/compare/v1.0.8...v1.0.9) - 2025-09-11
+
+### Commits
+
+- [Deps] update `call-bind`, `es-abstract`, `es-aggregate-error`, `globalthis` [`e66973b`](https://github.com/es-shims/error-cause/commit/e66973bae6d18fdcfa0cc9d7dc2dacd38296efa8)
+- [Refactor] use `set-proto` directly [`d7088f9`](https://github.com/es-shims/error-cause/commit/d7088f963afedd03d12a6e3fcfe15e729bfae7c8)
+- [meta] fix `exports` order [`792d2c6`](https://github.com/es-shims/error-cause/commit/792d2c6993c6bb6c47da52f3de2982c8cf98481c)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `function.prototype.name`, `has-strict-mode`, `tape` [`04aa4c8`](https://github.com/es-shims/error-cause/commit/04aa4c84b4c191ba9104275bafd9f47017f4a339)
+- [Deps] update `es-abstract`, `es-aggregate-error` [`9642253`](https://github.com/es-shims/error-cause/commit/964225373f9905379993accc48eea9d8949904ad)
+- [Tests] replace `aud` with `npm audit` [`515c834`](https://github.com/es-shims/error-cause/commit/515c834fc244011a66884ac92adeb3d511a02bed)
+- [Dev Deps] update `@es-shims/api` [`553aca0`](https://github.com/es-shims/error-cause/commit/553aca0ebba84efe2886692602d1638cc03d9765)
+- [Dev Deps] add missing peer dep [`647a9ba`](https://github.com/es-shims/error-cause/commit/647a9ba70b49d85ed13b889605684f7b8bbb9e23)
+
 ## [v1.0.8](https://github.com/es-shims/error-cause/compare/v1.0.7...v1.0.8) - 2024-03-16
 
 ### Commits
